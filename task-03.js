@@ -12,11 +12,14 @@
 let message = prompt("введите пароль")
 const ADMIN_PASSWORD = 'jqueryismyjam';
  
-    if (message == ADMIN_PASSWORD) {
-        alert('Добро пожаловать!')
+    if (message === true || message === "jqueryismyjam") {
+            message = "Добро пожаловать!"
         }
-    else {  
-        alert('Доступ запрещен, неверный пароль!')
-    };
+        else if(message === null) {  
+            message = "Отменено пользователем!"
+        }
+    else {
+         message = "Доступ запрещен, неверный пароль!"
+};
 alert(message);
-console.log (typeof message);
+
